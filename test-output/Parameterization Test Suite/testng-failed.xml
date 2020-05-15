@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameterization Test suite]">
+  <parameter name="suite-param" value="suit level parameter"/>
+  <test name="Parameter Test three(failed)">
+    <parameter name="test-three-param" value="test third method"/>
+    <parameter name="suite-param" value="ovride from some methods"/>
+    <classes>
+      <class name="Selinium.com.testng.Prameeterofdemo">
+        <methods>
+          <include name="parametermethod2"/>
+        </methods>
+      </class> <!-- Selinium.com.testng.Prameeterofdemo -->
+    </classes>
+  </test> <!-- Parameter Test three(failed) -->
+</suite> <!-- Failed suite [Parameterization Test suite] -->

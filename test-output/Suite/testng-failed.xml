@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Selinium.com.testng.AnnotationDemo">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testparameterwithXML"/>
+        </methods>
+      </class> <!-- Selinium.com.testng.AnnotationDemo -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Selinium.com.testng.AnnotationDemo">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testparameterwithXML"/>
+        </methods>
+      </class> <!-- Selinium.com.testng.AnnotationDemo -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="InternetExplorerTest(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Selinium.com.testng.AnnotationDemo">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testparameterwithXML"/>
+        </methods>
+      </class> <!-- Selinium.com.testng.AnnotationDemo -->
+    </classes>
+  </test> <!-- InternetExplorerTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test suite" verbose="1">
+  <parameter name="suite-param" value="suit level parameter" />
+  <test name="Parameter Test one">
+  <classes>
+  <class name="Selinium.com.testng.Prameeterofdemo">
+  <methods>
+  <include name="parametermethod1" />
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <test name="Parameter Test two">
+  <parameter name="test-two-param" value="test  second the parameter"/>
+  <classes>
+  <class name="Selinium.com.testng.Prameeterofdemo">
+  <methods>
+  <include name="parametermethod2"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  
+  <test name="Parameter Test three">
+  <parameter name="suite-param" value="ovride from some methods"/>
+  
+  <parameter name="test-three-param" value="test third method"/>
+  
+  <classes>
+  <class name="Selinium.com.testng.Prameeterofdemo">
+  <methods>
+  <include name="parametermethod3"/>
+  </methods>
+  </class>
+  </classes>
+  </test>
+  </suite>
+  
+  
